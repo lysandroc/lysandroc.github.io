@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : LYSANDRO CARIOCA BRAGA
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% Ensure that generate pdf is machine readable/ATS parsable
+
+%\input glyphtounicode
+%\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://linkedin.com/in/lysandroc}{\Large LYSANDRO CARIOCA}} & Email: \href{mailto:lysandroc@gmail.com}{lysandroc@gmail.com} \\
+  \href{https://linkedin.com/in/lysandroc}{\faLinkedin \ @lysandroc}
+  \href{https://github.com/lysandroc}{\faGithub \ @lysandroc} & Mobile: +55 85 997-569-542 \\
+\end{tabular*}
+\hfill \break
+As a software engineer with over seven years of experience, I learned how to build scalable solutions and to be committed to assertive delivery according to the company’s needs.
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    {\item
+      \textbf{Languages}{: Javascript, Typescript, Golang, Java, C\#, SQL}
+     }
+     \hfill
+     {\item
+      \textbf{Technologies}{: Kubernetes, RabbitMQ, Azure DevOps, CouchDB, NodeJS, Jest, Cypress, React, React Testing Library, Storybook}
+     }
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Instituto Atlântico}{Fortaleza, CE}
+      {Senior Software Engineer}{Apr. 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{3D Printer Dashboard}
+          {Developing a solution that shows all information about 3D printer usage for a global printer manufacturer. Implementing thin REST layer written in Golang that reads information from data lake; Creating new dashboards using Reactjs and Typescript; Contributing to the internal DevOps organization creating new CI/CD templates used across teams. }
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {OSF Digital}{Fortaleza, CE}
+      {Senior Software Engineer}{May 2019 - Apr. 2020}
+      \resumeItemListStart
+        \resumeItem{Private Pension}
+          {A solution that sells a private pension fund to customers. Developed several screens using ReactJS based on UX requirements; code was covered by 85\% of unit testing; Led a team of three developers to build an end to end testing project using cypress framework.   }
+          \resumeItem{Open Banking API}
+          {Open Banking is a project that reduces the bank transaction price for customers. Implemented an application using ReactJS that reads API Specification and shows samples on how to use this in different languages; Implemented new rules using Java and RabbitMQ inside the event-driven flow that processes data asynchronously.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Drugstore Pague Menos}{Fortaleza, CE}
+      {Senior Software Engineer}{Aug. 2013 - Apr. 2019}
+      \resumeItemListStart
+        \resumeItem{Leadership}
+          {Led a team of ten during three years to develop supply chain solutions for five warehouses and more than a thousand stores.}
+        \resumeItem{Last Chance}
+          {A system that applies discounts for products near expiration date used by more than a thousand stores. I developed this application using ReactJS and .NET Core within five months and it increased the sales by around a million dollars monthly. }
+        \resumeItem{Warehouse Order Picking System}
+          {A distributed system and data over CouchDB used to check and validate the picking process using the pick box method. Implemented a sample method algorithm to pick random boxes and reduce issues using Javascript; Optimized routines to clean up the local database on hundreds of workstations using NodeJS; Optimized the picking process from 2 hours to 5 minutes grouping them by transport routes. }
+      \resumeItemListEnd
+    \resumeSubSubheading
+     {Software Developer Intern}{Feb. 2013 - Aug. 2013}
+     \resumeItemListStart
+        \resumeItem{Maintainer}
+          {Included SQL queries in the purchases and sales reports; Implemented a new application using ASP.NET to record client information by pharmacists.}
+     \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidade Estadual do Ceara}{Fortaleza, CE}
+      {Postgraduate Diploma in Software Engineering}{May. 2017 -- Feb. 2019}
+    \resumeSubheading
+      {Faculdade Tecnologica Lourenço Filho}{Fortaleza, CE}
+      {Associate of Science in Computer Science}{Feb. 2012 -- Dec. 2014}
+    \resumeSubheading
+      {EEEP Santa Rita}{Maranguape, CE}
+      {Computer Technician}{Feb. 2009 -- Dec. 2011}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+% \resumeSubHeadingListEnd
+%
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
