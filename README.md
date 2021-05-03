@@ -1,4 +1,4 @@
-Lysandro's Resume
+Lysandro's [Resume](https://lysandroc.github.io/)
 
 Pre-requiments:
  - vscode extension needs mactex or a dockernized latex environment to preview/build TEX file
