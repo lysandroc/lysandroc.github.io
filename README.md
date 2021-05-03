@@ -1,5 +1,9 @@
-# lysandroc.github.io
-Resume
+Lysandro's Resume
 
 Pre-requiments:
- - Docker or VSCode extension to preview and build TEX resume.
+ - vscode extension needs mactex or a dockernized latex environment to preview/build TEX file
+ - the existing Dockerfile just builds the TEXT file without vscode
+
+ tips
+ - https://towardsdatascience.com/three-ways-to-create-dockernized-latex-environment-2534163ee0c4
+ - https://github.com/qdm12/latexdevcontainer
