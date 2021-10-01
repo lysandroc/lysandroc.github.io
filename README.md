@@ -2,7 +2,7 @@ Lysandro's [Resume](https://lysandroc.github.io/)
 
 Pre-requiments:
  - Visual Studio Code
- - Install extension [recommendations.](./resume.code-workspace)
+ - Accept the extension [recommendations.](./resume.code-workspace)
  - Ctrl+Shift+P -> "Tasks: Allow Automatic Tasks in Folder"
         - Otherwise you need to run this command manually: docker-compose up -d 
 
