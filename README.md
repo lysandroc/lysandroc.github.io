@@ -1,9 +1,11 @@
 Lysandro's [Resume](https://lysandroc.github.io/)
 
 Pre-requiments:
- - vscode extension needs mactex or a dockernized latex environment to preview/build TEX file
- - the existing Dockerfile just builds the TEXT file without vscode
+ - Visual Studio Code
+ - Install extension [recommendations.](./resume.code-workspace)
+ - Ctrl+Shift+P -> "Tasks: Allow Automatic Tasks in Folder"
+        - Otherwise you need to run this command manually: docker-compose up -d 
 
- tips
+References:
  - https://towardsdatascience.com/three-ways-to-create-dockernized-latex-environment-2534163ee0c4
  - https://github.com/qdm12/latexdevcontainer

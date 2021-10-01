@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+			"latex-workshop.docker.enabled": true,
+			"latex-workshop.latex.outDir": ".",
+			"latex-workshop.synctex.afterBuild.enabled": true,
+			"latex-workshop.view.pdf.viewer": "tab",
+			"latex-workshop.docker.image.latex": "tianon/latex",
+			"window.zoomLevel": 2,
+	},
+	"extensions": {
+		"recommendations": ["james-yu.latex-workshop"]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [{
+			"label": "docker-compose-up-latex",
+			"type": "shell",
+			"command": "docker-compose up -d",
+			"problemMatcher": [],
+			"windows": {
+				"command": "docker-compose up -d"
+			},
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			},
+			"runOptions": {"runOn": "folderOpen"}
+		}]
+	}
+}

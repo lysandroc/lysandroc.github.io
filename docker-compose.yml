@@ -1,0 +1,5 @@
+version: "3.7"
+services:
+  resume:
+    build: .
+    entrypoint: zsh -c "while sleep 1000; do :; done"

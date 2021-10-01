@@ -5,3 +5,6 @@
 *.out
 *.gz
 *_temp.tex
+*.fls
+*.fdb*
+__latexindent_temp.tex
