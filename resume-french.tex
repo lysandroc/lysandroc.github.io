@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : LYSANDRO CARIOCA BRAGA
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% Ensure that generate pdf is machine readable/ATS parsable
+
+%\input glyphtounicode
+%\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{http://linkedin.com/in/lysandroc}{\Large LYSANDRO CARIOCA BRAGA}} & Montreal, QC, Canada\\ 
+	\href{https://linkedin.com/in/lysandroc}{\faLinkedin \ @lysandroc}
+	\href{https://github.com/lysandroc}{\faGithub \ @lysandroc} & Mobile: +1 (438) 466-8370\\
+	\textbf{}{} & Email: \href{mailto:lysandroc@gmail.com}{lysandroc@gmail.com} \\
+\end{tabular*}
+\hfill \break
+Développeur logiciel avec dix ans d'expérience dans le développement et la mise à l'échelle des applications. Résolveur de problèmes exceptionnel avec une aptitude pour le dépannage et la capacité à maîtriser rapidement de nouvelles technologies.
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+{\item
+	\textbf{Languages}{: Javascript, Typescript, Golang, and SQL}
+}
+\hfill
+{\item
+	\textbf{Technologies}{: React, Jest, NodeJS, GraphQL, AWS, Kubernetes, RabbitMQ, CouchDB and MongoDB}
+}
+\resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Stay22} {}
+{Développeur Logiciel Senior}{Nov. 2021 - Present}
+\resumeItemListStart
+\resumeItem{\href{https://stay22.com/search}{Map} and \href{https://hub.stay22.com}{Hub} }
+{Développement de la prochaine génération de cartes chez Stay22. La stack backend comprend Typescript, Node.js, MongoDB et Go. Pour le frontend, nous utilisons Typescript, React, Vue, MapLibre et Styled Components. Je maintiens également des bibliothèques internes communes partagées entre nos produits internes.}
+\resumeItemListEnd
+
+\resumeSubheading
+{SysMap Solutions Software} {}
+{Développeur Logiciel Senior}{Feb. 2021 - Nov. 2021}
+\resumeItemListStart
+\resumeItem{Global Relationship Platform}
+{Un nouveau produit pour Natura\&Co pour suivre le temps de relation des consultants en beauté dans plusieurs pays. Mise en œuvre d'une architecture de conception basée sur des événements pour évoluer le chronométrage des relations asynchrones en utilisant AWS Lambda, SQS, NodeJS et Scylla DB. Ajout de nouvelles fonctionnalités à l'application ReactJS/NodeJS. J'ai utilisé Jenkins, Docker, Kubernetes, Grafana et Kibana dans le cadre du processus DevOps pour faire évoluer et surveiller l'application.}
+\resumeItemListEnd
+  
+\resumeSubheading
+{Instituto Atlântico} {}
+{Développeur Logiciel Senior}{Apr. 2020 - Feb. 2021}
+\resumeItemListStart
+\resumeItem{\href{https://www.printos.com}{3D Printer Dashboard}}
+{Développement d'un système en tant que service pour HP qui affiche toutes les informations sur l'utilisation des imprimantes 3D. Mise en œuvre d'une couche REST légère écrite en Golang qui lit les informations d'AWS Redshift ; création de tableaux de bord à partir de Figma en utilisant React, React Hooks, Typescript ; contribution à l'organisation DevOps interne en créant des étapes de modèles YAML utilisées par plusieurs équipes.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://osf.digital/}{OSF Digital}} {}
+{Développeur Logiciel Senior}{May 2019 - Apr. 2020}
+\resumeItemListStart
+\resumeItem{\href{https://autocompra.caixavidaeprevidencia.com.br/previdencia/objetivo}{Private Pension}}
+{Une solution offrant un fonds de pension privé aux clients. Développement d'une application web à partir de zéro en utilisant ReactJS, React Hooks, Context API, RTL et Styled Components à partir de Sketch UI ; le code est couvert à 85\% par des tests unitaires ; direction d'une équipe de trois développeurs pour construire un projet de test de bout en bout en utilisant le framework Cypress.}
+% \resumeItem{Open Banking API}
+% {Open Banking is a project that reduces the bank transaction price for customers. Implemented an application using ReactJS that reads API Specification and shows samples on how to use this in different languages; Implemented new rules using Java and RabbitMQ inside the event-driven flow that processes data asynchronously.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://www.paguemenos.com.br/}{Empreendimentos Pague Menos}}{Fortaleza, CE}
+{ Développeur Logiciel Senior }{Fev. 2014 - Apr. 2019}
+\resumeItemListStart
+% \resumeItem{Leadership}
+%   {Led a team of ten during three years to develop supply chain solutions for five warehouses and more than a thousand stores.}
+% \resumeItem{Last Chance}
+%   {A system that applies discounts for products near expiration date used by more than a thousand stores. I developed this application using ReactJS and .NET Core within five months and it increased the sales by around a million dollars monthly. }
+\resumeItem{Warehouse Order Picking System}
+{Un système distribué et des données sur CouchDB utilisés pour vérifier et valider le processus de picking en utilisant la méthode de la boîte de picking. Mise en œuvre d'un algorithme de méthode d'échantillonnage pour sélectionner des boîtes au hasard et réduire les problèmes en utilisant JavaScript ; optimisation des routines pour nettoyer la base de données locale sur des centaines de postes de travail en utilisant NodeJS ; optimisation du processus de picking de 2 heures à 5 minutes en les regroupant par itinéraires de transport.}
+\resumeItemListEnd
+% \resumeSubSubheading
+%  {Software Developer Intern}{Feb. 2013 - Aug. 2013}
+%  \resumeItemListStart
+%     \resumeItem{Maintainer}
+%       {Included SQL queries in the purchases and sales reports; Implemented a new application using ASP.NET to record client information by pharmacists.}
+%  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Analyse et Développement de Systèmes}{Fortaleza, CE}
+{Faculdade de Tecnologia Lourenço Filho}{Jan. 2012 -- Oct. 2014}
+\resumeSubheading
+{Éducation Professionnelle Technique au Lycée}{Maranguape, CE}
+{Escola Estadual de Educação Profissional Santa Rita}{Mar. 2009 -- Dec. 2011}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+% \resumeSubHeadingListEnd
+%
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
